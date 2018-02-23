@@ -7,12 +7,65 @@
     <title>Order Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
 </head>
 
 <body>
   <h1>Order Form</h1>
   <p>Please use the drop down menu to select the product that you would like to purchase and fill out the form so we know where to send the product. Once you are ready to add your purchase to the cart please use the "add to cart" button</p>
-  <button id="addToCart">Add to Cart</button>
+  <form id="address">
+      <fieldset>
+        
+        <legend>Please Select Product and Add Your Address Below</legend>
+
+        <select name="product">
+          <option value="bag" selected>R2 Bag</option>
+          <option value="banana" >Banana Slicer</option>
+          <option value="bathroom" >Ipad Toilet Holder</option>
+          <option value="boots" >Open Toe Rainboots</option>
+          <option value="breakfast" >All-In-One-Breakfast</option>
+          <option value="bubblegum" >Meatball Bubblegum</option>
+          <option value="chair" >Uncomfortable Chair</option>
+          <option value="cthulhu" >Cthulhu</option>
+          <option value="dog-duck" >Dog Duckbill</option>
+          <option value="dragon" >Dragon Meat</option>
+          <option value="pen" >Pen Untensils</option>
+          <option value="pet-sweep" >Pet Sweep Slippers</option>
+          <option value="scissors" >Pizza Scissors</option>
+          <option value="shark" >Shark Sleeping Bag</option>
+          <option value="sweep" >Baby Sweep Suit</option>
+          <option value="tauntaun" >TaunTaun Sleeping Bag</option>
+          <option value="unicorn" >Unicorn Meat</option>
+          <option value="usb" >Usb Tenticle (It Moves!)</option>
+          <option value="water-can" >Water-youself Watering Can</option>
+          <option value="wine-glass" >Always Spill Wine Glass</option>
+        </select>
+
+        <label for="number">Number of Product: </label>
+        <input name="number" type="number" size="5"  />
+
+        <label for="customer">Name: </label>
+        <input name="customer" type="text" size="45" />
+
+        <label for="street">Street: </label>
+        <input name="street" type="text" size="45" />
+        
+        <label for="city">City: </label>
+        <input name="city" type="text" size="25" />
+
+        <label for="state">State: </label>
+        <input name="state" type="text" size="25"/>
+
+        <label for="zip">Zip Code: </label>
+        <input name="zip" type="text" size="10" />
+
+        <label for="phone">Phone Number: </label>
+        <input name="phone" type="number" size="20" />
+
+        <button type="submit">Add to Cart</button>
+
+      </fieldset>
+  </form>
+  <script src="js/app.js"></script>
 </body>
 </html>
